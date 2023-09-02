@@ -11,7 +11,7 @@
     <div class="container">
         <div class="form-container" id="login-form">
           <h1>Login</h1>
-          <form>
+          <form action="/signin" method="post" enctype="multipart/form-data">
             <label for="username">Username</label>
             <input type="text" id="username" name="username" required>
             <label for="password">Password</label>
@@ -23,7 +23,7 @@
     
         <div class="form-container" id="signup-form" style="display: none;">
           <h1>Sign Up</h1>
-          <form>
+          <form action="/signup" method="post" enctype="multipart/form-data">
             <label for="first_name">First Name</label>
             <input type="text" id="first_name" name="first_name" required>
     <label for="last_name">Last Name (Optional)</label>

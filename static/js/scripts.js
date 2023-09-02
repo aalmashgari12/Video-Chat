@@ -30,16 +30,20 @@ const new_username = document.getElementById('new_username');
 const button = document.getElementById('submit');
 
 
+
+
+
 button.addEventListener('click', function () {
     var uname = new_username.value;
     var special = ['!', '@', '#', '$'];
 
     if (uname.length > 5) {
-        for (var a in special) {
+        for (let a of special) {
+            console.log(a)
+            console.log(uname.split(""))
 
-            if (a in uname.split("")) {
+            if (uname.split("").includes(a)) {
                 alert("Special characters present");
-                console.log(a, uname.split(""));
 
             }
         }
@@ -47,3 +51,5 @@ button.addEventListener('click', function () {
     }
 
 });
+
+
